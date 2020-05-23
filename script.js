@@ -72,7 +72,7 @@ function generatePassword() {
   }
 
   //Loop to build password 1 letter at a time
-  for (var i = 1, n = passwordLength; i <= passwordLength; i++) {
+  for (var i = 1, passwordLength; i <= passwordLength; i++) {
     var char = Math.floor(Math.random() * possibleCharacters.length + 1);
     randomPassword += possibleCharacters.charAt(char);
   }
